@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바 스크립트</h1>
+	
+	
+	<h2>변수 선언</h2>
+</body>
+
+<script type="text/javascript">
+	/*
+	변수선언법
+	자료형을 쓰지 않는다
+	*/
+	
+	console.log("변수선언");
+	var no;
+	var str;
+	var boo;
+	
+</script>
+
+<script type="text/javascript">
+	
+	/* 같은 이름 변수 선언 가느ㅡㅇ */
+	var person = "정우성";
+	var person = "이효리";
+	console.log(person);
+	
+	var person = "유재석";
+	console.log(person);
+</script>
+
+<script type="text/javascript">
+
+	/* 대입시 자료형이 결정된다 */
+	console.log("	대입시 자료형이 결정된다");
+	
+	
+	var data;
+	console.log(typeof data);	//undefined
+	
+	data = 15;
+	console.log(typeof data);	//number
+	
+	data= "안녕";
+	console.log(typeof data);	//string
+	
+	data = 5>3;
+	console.log(typeof data);	//boolean
+	
+</script>
+
+<script type="text/javascript">
+
+
+	/* undefined, null 비교 */
+	console.log("undefined, null 비교");
+	
+	var myVar01;
+	var myVar02 = null;
+	console.log(typeof myVar01);	//undefined
+	console.log(typeof myVar02);	//undefined
+	
+
+</script>
+
+<script type="text/javascript">
+
+	/* ==,=== 비교 */
+	console.log("undefined, null 비교");
+	
+	console.log("123" == 123);		//true
+	console.log("123" === 123);		//false
+	
+	console.log(myVar01 == myVar02);	//undefined == null -->true
+	console.log(myVar01 === myVar02);	//undefined === null -->false
+	
+	console.log('' == false);	//true
+	console.log('' == 0);		//true
+	console.log(0 == false);	//true
+	
+	console.log('' === false);	//false
+	console.log('' === 0);		//false
+	console.log(0 === false);	//false
+	
+	
+	console.log("=====================================");
+	console.log('' == false);
+	console.log('' === false);
+	
+</script>
+
+
+
+
+</html>

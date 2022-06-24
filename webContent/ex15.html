@@ -18,7 +18,9 @@
 		password:"1234",
 		content:"안녕하세요ㅕ",
 		showInfo: function () {
-			console.log(name + "," + password + "," + content);
+			console.log(this.name);
+			console.log(this.password);
+			console.log(this.content);
 		}
 			
 	};
@@ -27,6 +29,9 @@
 	
 	var name = guestbookVo.name;
 	console.log(name);
+	
+	var password = guestbookVo.password;
+	console.log(password);
 	
 	var content = guestbookVo.content;
 	console.log(content);

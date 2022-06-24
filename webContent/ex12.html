@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> 자바스크립트</h1>
+	
+	<h2>변수의 범위(전역, 지역)</h2>
+</body>
+
+<script type="text/javascript">
+
+/*
+var name = "global";
+
+
+//함수정의
+function checkScope() {
+	var name = "local";
+	console.log(name);
+}
+
+checkScope();		//출력 local
+console.log(name);	//출력 global
+
+var no = 3;
+console.log(no);
+*/
+
+//실험2
+
+var name = "global";
+
+function checkScope() {
+	var name = "local"; //전역변수에 name으로 사용됨
+	var name2 = "로컬";  //전벽변수로 선엄됨
+}
+
+checkScope();
+console.log(name); //--> global 출력 
+console.log(name2);//--> 에러
+
+
+</script>
+
+
+
+</html>

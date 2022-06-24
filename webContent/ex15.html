@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+	
+	<h2>객체</h2>
+</body>
+
+<script type="text/javascript">
+
+
+	var guestbookVo = {
+		name:"소준호",
+		password:"1234",
+		content:"안녕하세요ㅕ",
+		showInfo: function () {
+			console.log(name + "," + password + "," + content);
+		}
+			
+	};
+
+	console.log(guestbookVo);
+	
+	var name = guestbookVo.name;
+	console.log(name);
+	
+	var content = guestbookVo.content;
+	console.log(content);
+</script>
+</html>

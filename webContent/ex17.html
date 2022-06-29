@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="./jquery-1.12.4.js"></script>
+
+
+
+
+</head>
+<body>
+
+	<h1>자바스크립트</h1>
+	
+	<h2>이벤트  (~할때)</h2>
+
+	<div>
+		<button id="btn" type="button">테스트 버튼</button>
+		<h3 id="display" >이름출력영역</h3>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+window.onload = function(){
+	
+	/*상상
+	var testButton = {
+		id: "btn",
+		tag: "button",
+		type: "button",
+		innerHTML: "테스트 버튼",
+		onclick: function(){}
+	};
+	
+	var testArea = {
+		id: "diaplay",
+		tag: h3,
+		innerHTML: 이름출력영역,
+		onclick: function(){}
+	}
+	
+	*/
+	
+	//자바스크립트로 이벤트 처리
+	/*
+	var testButton = document.getElementById("btn");    //id=btn DOM--> 자바스크립트객체화
+	var testArea = document.getElementById("display");  //id=dispay DOM-->자바스트립트객체화
+	
+	testButton.onclick = function(){
+		console.log("버튼클릭");
+		testArea.innerHTML = '<font color="blue">황일영</font>';
+	};
+	*/
+	
+	
+	
+	//jquery 이벤트 처리
+	
+	
+	//상상
+	/*
+	var testButton = {
+		id: "btn",
+		tag: "button",
+		type: "button",
+		on: function("keydown", b){}
+	};
+	*/
+	
+	var testButton = $("#btn");
+	var testArea = $("#display");
+	
+	testButton.on("click" , function(){
+		console.log("클릭 jquery");
+		
+		testArea.html('<font color="blue">황일영</font>');
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+}; 
+</script>
+</html>
